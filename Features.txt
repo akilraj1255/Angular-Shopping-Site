@@ -1,4 +1,3 @@
-DONE:
 1. Products show up
 2. You can add products to cart or wish list
 3. You can delete products from cart or wish list
@@ -15,6 +14,4 @@ DONE:
 14. Connected to FB API
 15. Users can log out
 16. Pulling Facebook profile pics to be displayed on the profile.html page
-
-TO DO FOR CHIRAAG:
-5. Connecting to Google Maps (this is on the index.html page as “Get Directions” and it links to GMapsHelloWorld.html but nothing shows up except my text “hello map”
+17. Connecting to Google Maps (this is on the index.html page as “Get Directions” and it links to GMapsHelloWorld.html but nothing shows up except my text “hello map”
