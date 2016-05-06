@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+    <h1>Items on your wish list</h1>
+      <table class="wishlist"> 
+        <tr ng-repeat="item in wishlist">
+          <td><img src={{item.imageURL}} alt={{item.name}} height="300" width="300"></td>
+          <td>
+            <h1><a href="#/products/{{item.product_id}}">{{item.product_name}} </a></h1>
+            <br>
+            <h3>${{item.price}} </h3>
+            <button ng-click="remove_from_wishlist(item.product_id)">Remove from wishlist</button>
+          </td>
+        </tr>
+      </table>
+        
+  </div>
+</div>

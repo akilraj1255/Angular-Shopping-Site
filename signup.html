@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="row">
+    
+      <table class="product_info"> 
+        <tr ng-repeat="item in products">
+          <td><img src={{item.image_url}} alt={{item.name}} height="300" width="300"></td>
+          <td>
+            <h1>{{item.name}}</h1>
+            <br>
+            <h3>${{item.price}} </h3>
+            <br>
+            {{item.description}} 
+          </td>
+        </tr>
+      </table>
+        
+      <br>
+      <h2>Reviews</h2>
+      <table class="reviews" style="text-align:left; width:100%; border:1px solid black" >
+        <tr>
+          <th><strong>Reviewer:</strong></th>
+          <th><strong>Product rating:</strong></th>
+          <th><strong>Comments:</strong></th>
+        </tr>
+        <tr ng-repeat="review in reviews">
+          <td>
+            {{review.firstname}} {{review.lastname}}
+          </td>
+          <td>
+            {{review.rating}}
+          </td>
+          <td>
+            {{review.review}}
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

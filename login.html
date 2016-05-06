@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facebook Login JavaScript Example</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10">
+        <!--Body content-->
+        <div id="login">
+            <h1>Log In</h1>
+            <form>
+                Username: <input ng-model="username" required>
+                <br>
+                Password: <input type="password" ng-model="password" required>
+                <br>
+                <button ng-click="login(username, password)">Login</button>
+             </form>
+        </div>
+        <br>
+        <div ng-controller="FBCtrl">
+          <button class="btn btn-primary" ng-click="login()" ng-disabled="loginStatus.status == 'connected'">Connect with Facebook</button>
+          <button class="btn btn-danger" ng-click="logout()" ng-disabled="!loginStatus || loginStatus.status != 'connected'">Logout of Facebook</button>
+        </div>
+        
+        <div id="register">
+          <h1>Register</h1>
+          <form>
+              Username: <input ng-model="usernamen" required>
+              <br>
+              Password: <input type="password" ng-model="passwordn" required>
+              <br>
+              First Name: <input ng-model="fname" required>
+              <br>
+              Last Name: <input  ng-model="lname" required>
+              <br>
+              Street Address: <input ng-model="address" required>
+              <br>
+              City: <input ng-model="city" required>
+              <br>
+              State: <input ng-model="state" required>
+              <br>
+              <button ng-click="register(usernamen,passwordn,fname,lname,address,city,state)">Register</button>
+           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

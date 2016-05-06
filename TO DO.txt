@@ -1,0 +1,20 @@
+DONE:
+1. Products show up
+2. You can add products to cart or wish list
+3. You can delete products from cart or wish list
+4. You can checkout from the cart page (checking out = submitting order info to the orders table in shopping database)
+5. You can view your orders on your profile
+6. You can also view your personal info on your profile
+7. You can view reviews for products by clicking on the product URL
+8. You can submit reviews and ratings for products
+9. New users can register
+10. Passwords are hashed using salted one-way encryption
+11. Session is created when a user logs in //NOT applicable because there aren’t sessions in Angular… when you refresh the page you’re automatically logged out
+12. Users can view and delete their own orders but not those of other users
+13. Users can enter coupon codes when checking out
+14. Connected to FB API
+15. Users can log out
+16. Pulling Facebook profile pics to be displayed on the profile.html page
+
+TO DO FOR CHIRAAG:
+5. Connecting to Google Maps (this is on the index.html page as “Get Directions” and it links to GMapsHelloWorld.html but nothing shows up except my text “hello map”

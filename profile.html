@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <div class="profile">
+    <div class="user_info" style="float:left" >
+      <table style="border-collapse:separate; border-spacing: 30px 10px">
+          <tr ng-repeat="user in userInfo">
+              <td style="text-align:center">
+                  <img src={{user.pictureURL}} alt={{user.firstname}} height="500" width="380">
+                  <br>
+                  <br>
+                  <button ng-click="set_fb_pic()">Use my Facebook picture</button>
+              </td>
+
+              <td>
+                  <h1>{{user.firstname}} {{user.lastname}}</h1>
+                  <strong>Username: </strong>{{user.username}}
+                  <br>
+                  <strong>Location: </strong>{{user.city}}, {{user.state}}
+                  <br>
+                  <strong>Member since: </strong>{{user.joined}}
+              </td>
+          </tr>
+      </table>
+    </div>
+    <div class="order_info" style="float:right" style="border: 10px solid black; overflow:scroll">
+      <h2 style="text-align:center">Order History</h2>
+      <table>
+          <tr ng-repeat="order in orders">
+              <td>
+                  <h3>Showing details for Order #{{order.orderID}} placed on {{order.date_placed}}</h3>
+                  <strong>Order Total: </strong>${{order.order_total}}
+                  <br>
+                  <strong>Name: </strong>{{order.firstname}} {{order.lastname}}
+                  <br>
+                  <strong>Email: </strong>{{order.email}}
+                  <br>
+                  <strong>Shipping Address: </strong>{{order.shipping_address}} {{order.shipping_city}} {{order.shipping_state}} {{order.shipping_zipcode}}
+                  <br>
+                  <strong>Comments: </strong>{{order.comments}}
+                  <br>
+                  <button ng-click="delete_order(order.orderID)">Cancel this order</button>
+              </td>
+          </tr>
+      </table>
+    </div>
+  </div>
+</div>

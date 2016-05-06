@@ -1,0 +1,74 @@
+<div ng-controller="CheckoutCtrl" class="container-fluid">
+  <div class="row">
+    <h1 style="text-align:center">Ready to checkout?</h1>
+      <h2 style="text-align:center" >Order total: ${{cartTotal}}</h2>
+   
+      <form ng-submit="checkout(cartTotal)">
+          <h3>Personal Information</h3>
+          
+          First name: <input type="text" ng-model="first_name"/>
+          <br>
+              
+          Last name: <input type="text" ng-model="last_name"/>
+          <br>
+          
+          Email: <input type="text" ng-model="email"/>
+          <br>
+              
+          <h3>Credit Card Information</h3>
+          
+          Name on credit card: <input type="text" ng-model="credit_card_name"/>
+          <br>
+              
+          Credit card number: <input type="number" ng-model="credit_card_num"/>
+          <br>
+              
+          Credit card expiration date (mm/yy): <input type="text" ng-model="credit_card_expiration"/>
+          <br>
+              
+          Credit card security number: <input type="number" ng-model="credit_card_security_num"/>
+          <br>
+          
+          <h3>Billing Information</h3>
+          
+          Billing address: <input type="text" ng-model="billing_address"/>
+          <br>
+              
+          Billing city: <input type="text" ng-model="billing_city"/>
+          <br>
+              
+          Billing state: <input type="text" ng-model="billing_state"/>
+          <br>
+              
+          Billing zipcode: <input type="number" ng-model="billing_zipcode"/>
+          <br>
+          
+          <h3>Shipping Information</h3>
+          
+          Shipping address: <input type="text" ng-model="shipping_address"/>
+          <br>
+          
+          Shipping city: <input type="text" ng-model="shipping_city"/>
+          <br>
+              
+          Shipping state: <input type="text" ng-model="shipping_state"/>
+          <br>
+              
+          Shipping zipcode: <input type="number" ng-model="shipping_zipcode"/>
+          <br>
+          
+          <h3>Other</h3>
+          
+          Any comments? <input type="text" ng-model="comments"/>
+          <br>
+          
+          <h3>Promo Codes</h3>
+          Do you have any promo codes? <input type="text" ng-model="promo_code"/>
+          <br>
+          <br>
+          <div style="text-align:center">
+              <input type="submit" id="submit" value="Submit order"/>
+          </div>
+      </form>
+  </div>
+</div>

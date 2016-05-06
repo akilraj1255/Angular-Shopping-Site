@@ -1,0 +1,14 @@
+CSE 330 Creative Project
+
+Group members:
+    (1) Ruth Chen - 423268
+    (2) Chiraag Kapadia - 430947
+    
+Running ec2 instances & Login Details:
+    N/A (we're using localhost via npm)
+
+Creative portion:
+    (1) Users can connect to their Facebook via Graph API and angular-easyfb code from Github.
+    (2) Users can use their Facebook profile picture as their shopping site profile picture a
+    (3) Users can add to and delete items from their wish list.
+    (4) Users have their own profiles, complete with a picture, their name, username, and when they joined the site.

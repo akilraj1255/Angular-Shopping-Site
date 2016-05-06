@@ -1,0 +1,35 @@
+CSE 330 Creative Project - Shopping Site
+Ruth Chen & Chiraag Kapadia
+
+Getting Started (5 Points)
+    Rubric uploaded to Bitbucket by Wednesday, November 18th, 2015 at 1 PM (5 points)
+User Management (20 Points):
+    A session is created when a user logs in (3 points)
+    New users can register (3 points)
+    Passwords are hashed using salted one-way encryption (3 points)
+    Users can log out (3 points)
+    Users can view and delete their own orders but not those of other users (8 points)
+Shopping (20 Points):
+    Relational database is configured with correct data types and foreign keys (4 points)
+    Users can rate and review products (3 points)
+    Users can view reviews on products (3 points)
+    Users can add multiple products to their shopping cart and continue shopping (3 points)
+    Users can place orders on any product (3 points)
+    Users can enter coupon codes when checking out (4 points)
+Google Maps API (20 Points)
+    Google Maps properly connected (10 points)
+    Users can get directions to the store location (1 Brookings Dr) (10 points)
+Best Practices (10 Points):
+    Code is well formatted and easy to read, with proper commenting (3 points)
+    Safe from SQL Injection attacks (2 points)
+    Site follows the FIEO philosophy (3 points)
+    All pages pass the W3C validator (2 points)
+Usability (5 Points):
+    Site is intuitive to use and navigate (4 points)
+    Site is visually appealing (1 point)
+Creative Portion (20 Points)
+    IDEAS
+        Logging in with Facebook
+        Using Facebook API to pull profile picture
+        Users can add products to their wish list
+        Users can share their wish list with another existing user

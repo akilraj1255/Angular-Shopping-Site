@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      <div style="background:#00cc44">
+        <h2>User offer code CSE330 for 30% off your total purchase!</h2>
+      </div>
+      Search: <input ng-model="query">
+      Sort by:
+      <select ng-model="orderProp">
+        <option value="name">Alphabetical by name</option>
+        <option value="price">Alphabetical by price</option>
+      </select>
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+      <table class="productsTable">
+        <tr ng-repeat="item in products | filter:query | orderBy:orderProp" >
+          <td>
+            <img src={{item.image_url}} alt={{item.name}} height="300" width="300">
+              <br>
+          </td>
+          <td>
+            <h2><a href="#/products/{{item.product_id}}">{{item.name}} </a></h2>
+            <br>
+            ${{item.price}}
+            <br>
+            <button ng-click="add_to_cart(item.product_id)">Add to cart</button>
+            <button ng-click="add_to_wishlist(item.product_id)">Add to wishlist</button>
+          </td>
+          <br></br>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+</div>

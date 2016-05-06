@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="row">
+    <h1>Items in your cart</h1>
+      <table class="shopping_cart"> 
+        <tr ng-repeat="item in cart">
+          <td><img src={{item.imageURL}} alt={{item.name}} height="300" width="300"></td>
+          <td>
+            <h1><a href="#/products/{{item.product_id}}">{{item.product_name}} </a></h1>
+            <br>
+            <h3>${{item.price}} </h3>
+            <button ng-click="remove_from_cart(item.product_id)">Remove from cart</button>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <div style="text-align:center">
+          <h2>Cart Total: ${{cartTotal}}</h2>
+        <button ng-click="proceed_to_checkout()">Proceed to checkout</button>
+     </div>
+
+  </div>
+</div>
